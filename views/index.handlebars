@@ -28,8 +28,18 @@
 </ul>
 <hr>
 
-<form id="newBurgerForm">
-    <h2>Burger Name</h2>
-    <textarea typpe="text" name="burger_name"></textarea>
-    <button id="addNewBurg">Add this Burger</button>
+
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burger_name">Enter Burger Name:</label>
+    <input type="text" id="burger_name" name="burger_name">
+  </div>
+
+  <div class="form-group">
+    <label for="divoured">Devoured?</label><br>
+    <input type="radio" name="divoured" value="1" checked> Divoured!<br>
+    <input type="radio" name="divoured" value="0"> Hmm; Not Divoured!
+  </div>
+  <button type="submit" id="addNewBurg">Add this burger</button>
 </form>
