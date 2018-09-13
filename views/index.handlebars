@@ -10,8 +10,7 @@
     <h1>All devoured Bergures</h1>
     {{#each allBurgers}}        
         {{#if this.devoured}}
-            {{this.burger_name}} 
-            {{> burgers/burger-block devoured=false>}}
+            {{> burgers/burger-block devoured=false}}
         {{/if}}
     {{/each}}
 </ul>
@@ -21,8 +20,7 @@
     <h1>None devoured Bergures</h1>
     {{#each allBurgers}}       
         {{#unless this.devoured}}
-            {{this.burger_name}} 
-            {{> burgers/burger-block devoured=true>}}
+            {{> burgers/burger-block devoured=true}}
         {{/unless}}
     {{/each}}
 </ul>

@@ -11,7 +11,7 @@ router.get("/" , function(req,res){
 });
 
 //insert a new burger
-router.post("/api/butger/" , function(req,res){
+router.post("/api/burgers/" , function(req,res){
 
     burger.insertOne({
         burger_name : req.body.burger_name,
@@ -23,7 +23,7 @@ router.post("/api/butger/" , function(req,res){
 });
 
 //update a new burger
-router.put("/api/burger/:id", function(req,res){
+router.put("/api/burgers/:id", function(req,res){
 
     var id = req.params.id;
     

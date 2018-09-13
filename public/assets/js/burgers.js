@@ -1,7 +1,9 @@
 $(function(){
 
     //submitting a new burger:
-    $("#addNewBurg").on('click' , function(event){
+    $(".create-form").on('submit' , function(event){
+        event.preventDefault();
+
         var newBurger = {
             burger_name : $('#burger_name').val().trim(),
             devoured    : $('[name=divoured]:checked').val().trim()
