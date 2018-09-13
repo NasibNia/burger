@@ -18,6 +18,27 @@ $(function(){
         });   
     });
 
+
+    $(".change-stat").on("click", function(event){
+        event.preventDefault();
+
+        var newStat = $(this).attr('data-newStat');
+        var name = $(this).parent().burger_name;
+        var id = $(this).attr('data-id');
+        var burgerToUpdate = {
+            burger_name : name,
+            devoured    :newStat
+        };
+
+        $.ajax("/api/burgers/"+id, {
+            type : "PUT",
+            data : burgerToUpdate
+        }           
+        ).then(function(results){
+            console.log("information posted to the server");
+            location.reloadd();
+        });
+    });
     
 
 
