@@ -1,0 +1,35 @@
+
+{{!-- div to show all burgers --}}
+<button id="showAllBurgers"> Show All Burgers</button>
+<div id="all-burgers-div"></div>
+<hr>
+
+<hr>
+
+<ul>
+    <h1>All devoured Bergures</h1>
+    {{#each allBurgers}}        
+        {{#if this.devoured}}
+            {{this.burger_name}} 
+            {{> burgers/burger-block devoured=false>}}
+        {{/if}}
+    {{/each}}
+</ul>
+<hr>
+
+<ul>
+    <h1>None devoured Bergures</h1>
+    {{#each allBurgers}}       
+        {{#unless this.devoured}}
+            {{this.burger_name}} 
+            {{> burgers/burger-block devoured=true>}}
+        {{/unless}}
+    {{/each}}
+</ul>
+<hr>
+
+<form id="newBurgerForm">
+    <h2>Burger Name</h2>
+    <textarea typpe="text" name="burger_name"></textarea>
+    <button id="addNewBurg">Add this Burger</button>
+</form>
