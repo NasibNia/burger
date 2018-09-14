@@ -1,5 +1,6 @@
 body , .jumbotron{
     background-color: #333333;
+    font-family: 'Luckiest Guy', cursive; 
 }
 
 .jumbotron{
@@ -10,8 +11,9 @@ body , .jumbotron{
 
 }
 
-.title {
+.title, .uk-card {
     background-color: #ce8f40;
+    color: #5f3206;
 }
 .lead{
     line-height: 2;
@@ -20,7 +22,7 @@ body , .jumbotron{
 }
 #parallax { 
     /* The image used */
-    background-image: url("../img/burger.jpg");
+    background-image: url("../img/burger2.jpg");
 
     /* Set a specific height */
     height: 1000px; 
@@ -61,6 +63,11 @@ body , .jumbotron{
     /* font-size: 2em; */
   }
 
-  #page2{
+ .fas{
+    color: red;
+    font-size: 80px;
+  }
+  .change-stat{
+    /* background-color: #ce8f40; */
 
   }
