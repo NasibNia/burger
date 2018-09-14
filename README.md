@@ -44,7 +44,6 @@ This program is not deployed and is run on the console.
 ![burger](https://media.giphy.com/media/WBTUlyKBVlTTa/giphy.gif)
 <!-- ![[burger](./public/assets/img/YRBURGER.gif) -->
 
-
 # technology used
 <!-- make a list of technology used -->
 <!-- what you used for this web app, like html css -->
@@ -57,6 +56,7 @@ This program is not deployed and is run on the console.
 ⋅⋅1. Ordered sub-list
 4. And another item. 
 -->
+
 - Making a server 
 - javascript
 - node.js
