@@ -5,6 +5,7 @@ var router = express.Router();
 //get all the burgers
 router.get("/" , function(req,res){
     burger.selectAll(function(data){
+        console.log("idiot" ,data);
         res.render("index" , {allBurgers : data});
     });
 
@@ -27,15 +28,15 @@ router.put("/api/burgers/:id", function(req,res){
 
     var id = req.params.id;
     
-    var condition = "WHERE id="+id;
+    var condition = "id="+id;
 
     burger.updateOne({
-        burger_name : req.body.burger_name,
         devoured    : req.body.devoured
         }, condition , function(data){
             if (data.changedRows === 0) {
                 // If no rows were changed, then the ID must not exist, so 404
-                return res.status(404).end();
+                console.log("nothing changed")
+                // return res.status(404).end();
               } else {
                 res.status(200).end();
               }

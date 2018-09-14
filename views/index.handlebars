@@ -1,16 +1,12 @@
 
 {{!-- div to show all burgers --}}
 <button id="showAllBurgers"> Show All Burgers</button>
-<div id="all-burgers-div"></div>
-<hr>
-
-<hr>
-
-<ul>
+<div id="all-burgers-div">
+    <ul>
     <h1>All devoured Bergures</h1>
     {{#each allBurgers}}        
-        {{#if this.devoured}}
-            {{> burgers/burger-block devoured=false}}
+        {{#if devoured}}
+            {{> burgers/burger-block devour=false }}
         {{/if}}
     {{/each}}
 </ul>
@@ -19,11 +15,14 @@
 <ul>
     <h1>None devoured Bergures</h1>
     {{#each allBurgers}}       
-        {{#unless this.devoured}}
-            {{> burgers/burger-block devoured=true}}
+        {{#unless devoured}}
+            {{> burgers/burger-block devour=true}}
         {{/unless}}
     {{/each}}
 </ul>
+</div>
+
+
 <hr>
 
 
@@ -41,3 +40,6 @@
   </div>
   <button type="submit" id="addNewBurg">Add this burger</button>
 </form>
+
+
+<div id="burger_gif"> <img src="https://media.giphy.com/media/WBTUlyKBVlTTa/giphy.gif"></div>
