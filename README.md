@@ -42,7 +42,7 @@ This program is not deployed and is run on the console.
 <!-- take a picture of the image and add it into the readme  -->
 <!-- ![image title](path or link to image) -->
 ![burger](https://media.giphy.com/media/WBTUlyKBVlTTa/giphy.gif)
-![[burger](./public/assets/img/YRBURGER.gif)
+<!-- ![[burger](./public/assets/img/YRBURGER.gif) -->
 
 
 # technology used
