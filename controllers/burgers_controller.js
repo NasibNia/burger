@@ -5,7 +5,6 @@ var router = express.Router();
 //get all the burgers
 router.get("/" , function(req,res){
     burger.selectAll(function(data){
-        console.log("idiot" ,data);
         res.render("index" , {allBurgers : data});
     });
 
